@@ -1,0 +1,54 @@
+//David Arrown
+//227064516097
+
+//Deklarasi pacakage untuk membuat sebuah program
+package Tugas_2_Algoritma;
+//Deklarasi Super class karyawan
+public class Karyawan {
+    //Deklarasi variabel pada class karyawan
+    String NIP;
+    String nama;
+    String J_Kelamin;
+    int JumlahHari;
+    int totalgaji;
+    
+    //Method menampilkan NIP, Nama, dan Jenis kelamin
+    void karyawan(){
+      System.out.println("NIP : " + NIP);
+      System.out.println("Nama : " + nama);
+      System.out.println("Jenis Kelamin : " + J_Kelamin);
+    }
+    
+    //Method jumlah absen kerja
+    void absenKerja(){
+        System.out.println("Absen Kerja : "+ JumlahHari);
+    }
+    
+    //Method menghitung gaji
+    void hitungGaji(){
+        System.out.println("Gaji : Rp "+ (JumlahHari*50000));
+    }
+}
+
+//Deklarasi Sub class dari karyawan
+class Dosen extends Karyawan{
+    //Deklarasi variabel tambahan pada class dosen
+    String Golongan;
+    int Jumlah_sks;
+    int upah_per_sks;
+    
+    //Mengubah method hitung gaji pada super class 
+    @Override
+    void hitungGaji(){
+        System.out.println("Gaji : Rp "+ (upah_per_sks*Jumlah_sks*JumlahHari));
+    }
+
+    void Golongan() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+}
+
+//Deklarasi Sub class dari karyawan
+class Staff extends Karyawan{
+    
+}
