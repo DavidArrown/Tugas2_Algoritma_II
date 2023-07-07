@@ -1,0 +1,52 @@
+//David Arrown
+//227064516097
+
+//Deklarasi pacakage untuk membuat sebuah program
+package Tugas_2_Algoritma;
+//Deklarasi main
+public class Main {
+    
+    public static void main(String[] args) {
+        //membuat objek karyawan (kantor1)
+        Karyawan kantor1 = new Karyawan();     
+        //mengisi semua data variabel
+        kantor1.NIP = "K22";
+        kantor1.nama = "Damian";
+        kantor1.J_Kelamin = "Laki-Laki";
+        kantor1.JumlahHari = 29;       
+        //Memanggil method
+        kantor1.karyawan();
+        kantor1.absenKerja();
+        kantor1.hitungGaji();
+        System.out.println("");
+        
+        //membuat objek Dosen (kantor2)
+        Dosen kantor2 = new Dosen();       
+        //mengisi semua data variabel
+        kantor2.NIP = "D33";
+        kantor2.nama = "Clarisa";
+        kantor2.J_Kelamin = "Perempuan";
+        kantor2.JumlahHari = 20;
+        kantor2.Golongan = "1B";
+        kantor2.Jumlah_sks = 4;
+        kantor2.upah_per_sks = 60000; 
+        //Memanggil method
+        kantor2.karyawan();
+        kantor2.absenKerja();
+        kantor2.hitungGaji();
+        System.out.println("");
+        
+        //membuat objek Staff (kantor3)
+        Staff kantor3 = new Staff();
+        //mengisi semua data variabel
+        kantor3.NIP = "S47";
+        kantor3.nama = "Ramli";
+        kantor3.J_Kelamin = "Laki-laki";
+        kantor3.JumlahHari = 31;
+        //Memanggil method
+        kantor3.karyawan();
+        kantor3.absenKerja();
+        kantor3.hitungGaji();
+    }
+    
+}
